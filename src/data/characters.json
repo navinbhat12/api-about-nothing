@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Jerry Seinfeld",
+    "img": "https://i.imgur.com/0tSh41f.png",
+    "blurb": "A stand-up comedian and the central character of the show. Obsessed with cleanliness, cereal, and dating.",
+    "episodes": null
+  },
+  {
+    "id": 2,
+    "name": "George Costanza",
+    "img": "https://i.imgur.com/jEFrqJg.png",
+    "blurb": "Jerry's neurotic best friend. Often unemployed, insecure, and full of bad ideas.",
+    "episodes": null
+  },
+  {
+    "id": 3,
+    "name": "Elaine Benes",
+    "img": "https://i.imgur.com/C732w2H.png",
+    "blurb": "Jerry's ex-girlfriend and close friend. Independent, witty, and full of iconic dances.",
+    "episodes": null
+  },
+  {
+    "id": 4,
+    "name": "Cosmo Kramer",
+    "img": "https://i.imgur.com/GPPkybR.png",
+    "blurb": "Jerry's eccentric neighbor. Known for his wild entrances, weird schemes, and big heart.",
+    "episodes": null
+  }
+]

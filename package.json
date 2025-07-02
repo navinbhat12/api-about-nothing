@@ -1,0 +1,32 @@
+{
+  "name": "api-about-nothing",
+  "version": "1.0.0",
+  "description": "A RESTful API for the Seinfeld TV show, with episodes, characters, and quotes",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navinbhat12/api-about-nothing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/navinbhat12/api-about-nothing/issues"
+  },
+  "homepage": "https://github.com/navinbhat12/api-about-nothing#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.10",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
