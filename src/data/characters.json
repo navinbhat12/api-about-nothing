@@ -26,5 +26,60 @@
     "img": "https://i.imgur.com/GPPkybR.png",
     "blurb": "Jerry's eccentric neighbor. Known for his wild entrances, weird schemes, and big heart.",
     "episodes": null
+  },
+  {
+    "id": 5,
+    "name": "Carol",
+    "img": "https://i.imgur.com/KoqNktN.png",
+    "blurb": "Nasal-voiced friend of the group who lives in the Hamptons with her husband Michael. Famous for insisting \"You gotta see the baby!\"",
+    "episodes": [
+      {
+        "name": "The Stakeout",
+        "url": "/episodes/the-stakeout"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Helen Seinfeld",
+    "img": "https://i.imgur.com/TcUCv2h.png",
+    "blurb": "Jerry’s doting mother who thinks he’s perfect and can’t imagine why anyone wouldn’t like him. Lives in Florida with her husband Morty and shares his distaste for the Costanzas and Newman.",
+    "episodes": [
+      {
+        "name": "The Stakeout",
+        "url": "/episodes/the-stakeout"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Morty Seinfeld",
+    "img": "https://i.imgur.com/kzHW0Uz.png",
+    "blurb": "Jerry’s stubborn and frugal father who takes pride in inventing the “beltless trench coat” and fiercely defends his son. Retired and living in Florida with Helen, Morty is known for his battles with Velcro and his time as a condo board president.",
+    "episodes": [
+      {
+        "name": "The Stakeout",
+        "url": "/episodes/the-stakeout"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Vanessa",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Jerry’s Season One girlfriend and a lawyer. Though she appears in only two episodes, Vanessa is memorable for their early relationship struggles and a disastrous trip to Vermont.",
+    "episodes": [
+      {
+        "name": "The Stakeout",
+        "url": "/episodes/the-stakeout"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Joel",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Joel Horneck was a childhood friend of Jerry's in \"Male Unbonding\". Although they were friends as kids, they've grown apart as adults. Jerry decides to end the friendship.",
+    "episodes": []
   }
 ]

@@ -21,9 +21,12 @@
   },
   "homepage": "https://github.com/navinbhat12/api-about-nothing#readme",
   "dependencies": {
+    "axios": "^1.10.0",
+    "cheerio": "^1.1.0",
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "@types/cheerio": "^0.22.35",
     "@types/express": "^5.0.3",
     "@types/node": "^24.0.10",
     "ts-node-dev": "^2.0.0",

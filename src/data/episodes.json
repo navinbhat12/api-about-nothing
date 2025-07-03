@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "name": "The Seinfeld Chronicles",
+    "img": "",
+    "episode": "",
+    "blurb": "",
+    "characters": [],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "The Stakeout",
+    "img": "",
+    "episode": "",
+    "blurb": "",
+    "characters": [
+      {
+        "name": "Carol",
+        "url": "/characters/5"
+      },
+      {
+        "name": "Helen Seinfeld",
+        "url": "/characters/6"
+      },
+      {
+        "name": "Morty Seinfeld",
+        "url": "/characters/7"
+      },
+      {
+        "name": "Vanessa",
+        "url": "/characters/8"
+      }
+    ],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
+  }
+]
