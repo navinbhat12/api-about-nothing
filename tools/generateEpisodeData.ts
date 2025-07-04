@@ -97,7 +97,7 @@ async function scrapeEpisode(slug: string) {
     id: nextId,
     name: episodeTitle,
     img: "",
-    episode: "",
+    episode: `S${season}E${episode.padStart(2, "0")}`,
     blurb: "",
     characters: newCharactersList,
     quotes: [
@@ -114,13 +114,24 @@ async function scrapeEpisode(slug: string) {
 }
 
 // ========================================
-// USAGE: Replace 'TheSeinfeldChronicles.htm' with your script slug
-// Example: node tools/generateEpisodeData.ts TheSeinfeldChronicles.htm
+// USAGE: Replace with your script slug, season, and episode numbers
+// Example: npx ts-node tools/generateEpisodeData.ts TheSeinfeldChronicles.htm 1 3
+// This will create episode string "S1E03"
 // ========================================
 const inputSlug = process.argv[2];
+const season = process.argv[3];
+const episode = process.argv[4];
+
 if (!inputSlug) {
   console.error(
     "❌ Please provide a script slug, e.g., TheSeinfeldChronicles.htm"
+  );
+  process.exit(1);
+}
+
+if (!season || !episode) {
+  console.error(
+    "❌ Please provide season and episode numbers, e.g., 1 3 for S1E03"
   );
   process.exit(1);
 }

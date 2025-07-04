@@ -2,9 +2,9 @@
   {
     "id": 1,
     "name": "The Seinfeld Chronicles",
-    "img": "",
-    "episode": "",
-    "blurb": "",
+    "img": "https://i.imgur.com/JuC3ZK8.png",
+    "episode": "S1E01",
+    "blurb": "This series features the title character's humorous insights on life and his experiences as a bachelor. Initially, a girl Jerry met on the road wants to stay with him when she comes to New York. George thinks that she is just using Jerry as contingency plan. Hoffman (Kramer??) comes by to borrow a couple of pieces of meat. The girl calls and asks Jerry if she can stay at his apartment for the night, when she arrives she asks to stay for another night. Jerry is disappointed when everything is going his way until he finds out she is engaged.",
     "characters": [],
     "quotes": [
       {
@@ -20,9 +20,9 @@
   {
     "id": 2,
     "name": "The Stakeout",
-    "img": "",
-    "episode": "",
-    "blurb": "",
+    "img": "https://i.imgur.com/AvqYOtZ.png",
+    "episode": "S1E02",
+    "blurb": "While attending a birthday party with Elaine, his former girlfriend, Jerry is introduced to Vanessa. Despite his best efforts to obtain her last Name and phone number, Jerry is only able to find out the Name of the law firm where she works. With no other option, Jerry and his friend George wait in the lobby of the law firm, hoping to \"casually\" run into Vanessa during her lunch break.",
     "characters": [
       {
         "name": "Carol",
@@ -36,6 +36,75 @@
         "name": "Morty Seinfeld",
         "url": "/characters/7"
       },
+      {
+        "name": "Vanessa",
+        "url": "/characters/8"
+      }
+    ],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "The Robbery",
+    "img": "https://i.imgur.com/M2lxaCC.png",
+    "episode": "S1E03",
+    "blurb": "After his apartment is burglarized, Jerry decides to move. George, a Realtor, takes Jerry to see an apartment, which they both love. Trouble ensues when George decides that he wants the apartment for himself. They try to decide who will get it. Whoever wins Elaine wants their apartment. Meanwhile, Kramer searches for the stolen property.",
+    "characters": [
+      {
+        "name": "Carol",
+        "url": "/characters/5"
+      }
+    ],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Male Unbonding",
+    "img": "https://i.imgur.com/7qWOVjl.png",
+    "episode": "S1E04",
+    "blurb": "Jerry is annoyed that he has to spend time with a boyhood friend whom he cannot stand. Jerry's tactful attempts to end the relationship fail miserably. Kramer has an idea for a make-your-own- pizza parlor and is looking for investors.",
+    "characters": [
+      {
+        "name": "Joel",
+        "url": "/characters/9"
+      }
+    ],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "The Stock Tip",
+    "img": "https://i.imgur.com/98my8Lc.png",
+    "episode": "S1E05",
+    "blurb": "George persuades a reluctant Jerry to invest on a stock tip. When the stock plummets, Jerry pulls out in order to minimize his losses. George stands by his investment. Meanwhile, Jerry's weekend away with his girlfriend (Vanessa) is ruined by foul weather. Kramer has an idea for a roll-out tie dispenser.",
+    "characters": [
       {
         "name": "Vanessa",
         "url": "/characters/8"

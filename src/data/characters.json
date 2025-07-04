@@ -36,6 +36,10 @@
       {
         "name": "The Stakeout",
         "url": "/episodes/the-stakeout"
+      },
+      {
+        "name": "The Robbery",
+        "url": "/episodes/the-robbery"
       }
     ]
   },
@@ -72,6 +76,10 @@
       {
         "name": "The Stakeout",
         "url": "/episodes/the-stakeout"
+      },
+      {
+        "name": "The Stock Tip",
+        "url": "/episodes/the-stock-tip"
       }
     ]
   },
@@ -80,6 +88,11 @@
     "name": "Joel",
     "img": "https://i.imgur.com/CV7OLfy.png",
     "blurb": "Joel Horneck was a childhood friend of Jerry's in \"Male Unbonding\". Although they were friends as kids, they've grown apart as adults. Jerry decides to end the friendship.",
-    "episodes": []
+    "episodes": [
+      {
+        "name": "Male Unbonding",
+        "url": "/episodes/male-unbonding"
+      }
+    ]
   }
 ]
