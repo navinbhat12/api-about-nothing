@@ -120,5 +120,269 @@
         "quote": ""
       }
     ]
+  },
+  {
+    "id": 6,
+    "name": "The Ex Girlfriend",
+    "img": "",
+    "episode": "S2E01",
+    "blurb": "George neurotically ponders how to break up with his girlfriend, Marlene, and Jerry offers advice. When Jerry meets Marlene, he finds that he is attracted to her. Elaine is curious about a relationship that she has with a guy in her building that has degenerated over the past two years. Jerry is reluctantly drawn into George's ex-relationship when he picks up some books left at her apartment. Although he wants to break it off with her, she has this psycho-sexual hold over him and he becomes worried about what George might think is he lets this relationship develop. Elaine confronts the guy in her building and Jerry's relationship maybe in jeopardy when his girlfriend sees his act",
+    "characters": [
+      {
+        "name": "Marlene",
+        "url": "/characters/10"
+      }
+    ],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "The Pony Remark",
+    "img": "",
+    "episode": "S2E02",
+    "blurb": "Jerry's parents come to town for a 50th anniversary party. Jerry bets Kramer that he won't complete his plans to renovate his apartment with levels in a month. Jerry takes Elaine to the dinner and he makes an observation about children who have ponies, this remark offends the guest of honor. When she dies soon afterword, Jerry is afraid that his remark contributed to her death. He wonders if he should go to the funeral or to his championship softball game. Elaine wonders about the fate of their apartment when she hears the widower is moving to Arizona.",
+    "characters": [
+      {
+        "name": "Helen Seinfeld",
+        "url": "/characters/6"
+      },
+      {
+        "name": "Morty Seinfeld",
+        "url": "/characters/7"
+      }
+    ],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "The Jacket",
+    "img": "",
+    "episode": "S2E03",
+    "blurb": "Jerry goes shopping with Elaine and purchases a very expensive suede jacket. Jerry's new suede jacket makes an impression on everyone except Elaine's father, an author cut from Hemingway cloth and not suited to pampering anyone. He wears it out to dinner with Elaine's grumpy novelist father. The jacket gets ruined during a snowstorm.",
+    "characters": [
+      {
+        "name": "Alton Benes",
+        "url": "/characters/12"
+      }
+    ],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "The Phone Message",
+    "img": "",
+    "episode": "S2E04",
+    "blurb": "George blows an invitation upstairs with his latest girlfriend and then when he tries to make restitution he leaves progressively nastier messages on her answering machine. George leaves a series of angry messages on his girlfriend's answering machine, which he later regrets. George and Jerry try to replace the tape before she hears the messages. They find out that she already heard the tape and thought it was a joke. Jerry is disturbed that his own girlfriend loves a television commercial that he despises.",
+    "characters": [
+      {
+        "name": "Donna",
+        "url": "/characters/13"
+      }
+    ],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "The Apartment",
+    "img": "",
+    "episode": "S2E05",
+    "blurb": "When an apartment in Jerry's building becomes available, he suggests that Elaine rent it. After much thought, Jerry worries that this arrangement will affect his dating life and regrets his recommendation. George tests the \"man with a wedding band\" theory of meeting women.",
+    "characters": [
+      {
+        "name": "Manny",
+        "url": "/characters/14"
+      }
+    ],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "The Statue",
+    "img": "",
+    "episode": "S2E06",
+    "blurb": "Elaine persuades Jerry to hire a friend's boyfriend to clean his apartment. When Jerry realizes that a statue once owned by his grandfather is missing, he suspects the boyfriend. A confrontation could affect Elaine's working relationship with the housekeeper's girlfriend.",
+    "characters": [
+      {
+        "name": "Rava",
+        "url": "/characters/15"
+      },
+      {
+        "name": "Ray",
+        "url": "/characters/16"
+      }
+    ],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "The Revenge",
+    "img": "",
+    "episode": "S2E07",
+    "blurb": "George quits his job as a Realtor out of frustration. When his boss fails to rehire him, George seeks revenge and enlists Elaine to help. Jerry and Kramer also seek revenge on a Laundromat owner who Jerry believes has stolen money that was in Jerry's clothes.",
+    "characters": [
+      {
+        "name": "Newman",
+        "url": "/characters/17"
+      }
+    ],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "The Heart Attack",
+    "img": "",
+    "episode": "S2E08",
+    "blurb": "In a typical display of histrionics, George insists that he is suffering a heart attack. He rushes to the hospital emergency room where he is diagnosed with a harmless case of tonsillitis. George becomes even sicker when he takes Kramer's advice to visit a holistic healer.",
+    "characters": [],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "The Deal",
+    "img": "",
+    "episode": "S2E09",
+    "blurb": "George says it can't be done, but Jerry and Elaine set up rules and resume sexual intimacy with the understanding that they expect no more from one another as lovers than they did as \"friends\".",
+    "characters": [],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "The Baby Shower",
+    "img": "",
+    "episode": "S2E10",
+    "blurb": "Kramer persuades Jerry to install an illegal cable hookup. The bootleg installers arrive while Elaine is throwing a baby shower in Jerry's apartment. Meanwhile, George feels the need to confront the shower honoree, who once humiliated him on a date.",
+    "characters": [],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "The Chinese Restaurant",
+    "img": "",
+    "episode": "S2E11",
+    "blurb": "Jerry, George, and Elaine wait an unbearable amount of time for a table at a Chinese restaurant. Elaine can barely contain her hunger and George hovers near the telephone awaiting a call from a girlfriend whose apartment he left hurriedly at a crucial moment.",
+    "characters": [],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "The Busboy",
+    "img": "",
+    "episode": "S2E12",
+    "blurb": "George accidentally gets a busboy fired from his job and tries to atone for it. Elaine invites a boyfriend from Seattle to stay with her for a week and discovers that a week is much to long to have a houseguest and that she liked him better before. The busboy's life is saved and made for the better after his involvement with George, until he meets Elaine's houseguest.",
+    "characters": [
+      {
+        "name": "Antonio",
+        "url": "/characters/18"
+      }
+    ],
+    "quotes": [
+      {
+        "character": "",
+        "quote": ""
+      },
+      {
+        "character": "",
+        "quote": ""
+      }
+    ]
   }
 ]

@@ -1,7 +1,7 @@
 import axios from "axios";
 import * as cheerio from "cheerio";
 
-const EPISODE_URL = "https://seinfeldscripts.com/TheStockTip.htm";
+const EPISODE_URL = "https://seinfeldscripts.com/TheBusboy.htm";
 
 async function extractCharacterNames() {
   try {

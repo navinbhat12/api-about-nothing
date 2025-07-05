@@ -94,5 +94,103 @@
         "url": "/episodes/male-unbonding"
       }
     ]
+  },
+  {
+    "id": 10,
+    "name": "Marlene",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Marlene is a seductive yet frustrating woman whom both Jerry and George briefly date in the Seinfeld episode The Ex-Girlfriend, ultimately dumping her due to her endless conversations. She later breaks up with Jerry after seeing his act, saying she can't be with someone she doesn't respect—despite being a cashier herself",
+    "episodes": []
+  },
+  {
+    "id": 11,
+    "name": "Uncle Leo",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Uncle Leo is Jerry Seinfeld's uncle (his mother's brother), a bit character who is, even by Seinfeld universe standards, eccentric. He is often loud and somewhat boisterous. He lives in New York city, affording him frequent chances to bump into his nephew.",
+    "episodes": []
+  },
+  {
+    "id": 12,
+    "name": "Alton Benes",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Alton is Elaine’s gruff, intimidating father—a Korean War veteran and author of Fair Game—known for his intense demeanor, odd quirks, and tendency to make everyone around him uncomfortable.",
+    "episodes": [
+      {
+        "name": "The Jacket",
+        "url": "/episodes/the-jacket"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Donna",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Donna is a woman Jerry dates in \"The Phone Message\" whose fondness for a \"Cotton Dockers\" commercial—one Jerry despises—sparks an argument that ultimately ends their relationship.",
+    "episodes": [
+      {
+        "name": "The Phone Message",
+        "url": "/episodes/the-phone-message"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Manny",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Manny is the Spanish-speaking co-manager of Jerry's building in \"The Apartment\" who helps rent out the vacant unit, unintentionally sparing Jerry from living next to Elaine but leaving him with a loud musician instead.",
+    "episodes": [
+      {
+        "name": "The Apartment",
+        "url": "/episodes/the-apartment"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Rava",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Rava is a Finnish writer with a dark outlook on life who appears in \"The Statue\". After Elaine hires her boyfriend Ray to clean Jerry’s apartment, Jerry accuses Ray of stealing a statue—causing a rift between the couples and ending Rava’s professional relationship with Elaine.",
+    "episodes": [
+      {
+        "name": "The Statue",
+        "url": "/episodes/the-statue"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Ray",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Ray is Rava's boyfriend and a Columbia University student who appears in \"The Statue\". Hired to clean Jerry's apartment, Ray impresses Jerry—until Jerry suspects him of stealing a statue, leading to a confrontation that ends with Kramer impersonating a cop to retrieve it",
+    "episodes": [
+      {
+        "name": "The Statue",
+        "url": "/episodes/the-statue"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Newman",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Newman is Jerry's sworn nemesis and Kramer's eccentric sidekick, known for his sinister greetings and over-the-top schemes. A mailman with a flair for drama and mischief, Newman is both a thorn in Jerry's side and a frequent (if chaotic) partner in crime with Kramer",
+    "episodes": [
+      {
+        "name": "The Revenge",
+        "url": "/episodes/the-revenge"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Antonio",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Antonio is a busboy whom George accidentally gets fired in \"The Busboy\"—a twist of fate that ends up saving Antonio's life when an explosion kills five people at the restaurant shortly after. Grateful, Antonio thanks George, but a random fight with Elaine’s boyfriend leaves him injured, leaving George to care for his cat",
+    "episodes": [
+      {
+        "name": "The Busboy",
+        "url": "/episodes/the-busboy"
+      }
+    ]
   }
 ]
