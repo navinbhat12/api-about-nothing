@@ -20,15 +20,30 @@ interface Episode {
   quotes: any[];
 }
 
+interface Quote {
+  quote: string;
+  character: {
+    name: string;
+    url: string;
+  };
+  episode: {
+    name: string;
+    url: string;
+  };
+}
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 const charactersPath = path.join(__dirname, "data", "characters.json");
 const episodesPath = path.join(__dirname, "data", "episodes.json");
+const quotesPath = path.join(__dirname, "data", "quotes-transformed.json");
+
 const characters: Character[] = JSON.parse(
   fs.readFileSync(charactersPath, "utf-8")
 );
 const episodes: Episode[] = JSON.parse(fs.readFileSync(episodesPath, "utf-8"));
+const quotes: Quote[] = JSON.parse(fs.readFileSync(quotesPath, "utf-8"));
 
 app.get("/", (_req, res) => {
   res.send("Welcome to the Seinfeld API!");
@@ -89,6 +104,74 @@ app.get("/episodes/:id", ((req, res) => {
   }
 
   res.json(episode);
+}) as express.Handler);
+
+// Quotes endpoints
+app.get("/quotes", (req, res) => {
+  const authorFilter = req.query.author as string | undefined;
+  const episodeFilter = req.query.episode as string | undefined;
+  const quoteFilter = req.query.quote as string | undefined;
+
+  let filteredQuotes = quotes;
+
+  // Filter by author (partial name match)
+  if (authorFilter) {
+    filteredQuotes = filteredQuotes.filter((quote: Quote) =>
+      quote.character.name.toLowerCase().includes(authorFilter.toLowerCase())
+    );
+  }
+
+  // Filter by episode (partial name match)
+  if (episodeFilter) {
+    filteredQuotes = filteredQuotes.filter((quote: Quote) =>
+      quote.episode.name.toLowerCase().includes(episodeFilter.toLowerCase())
+    );
+  }
+
+  // Filter by quote content (partial text match)
+  if (quoteFilter) {
+    filteredQuotes = filteredQuotes.filter((quote: Quote) =>
+      quote.quote.toLowerCase().includes(quoteFilter.toLowerCase())
+    );
+  }
+
+  res.json(filteredQuotes);
+});
+
+app.get("/quotes/character/:characterId", ((req, res) => {
+  const characterId = parseInt(req.params.characterId);
+
+  // Find the character to get their name
+  const character = characters.find((char) => char.id === characterId);
+
+  if (!character) {
+    return res.status(404).json({ error: "Character not found" });
+  }
+
+  // Filter quotes by character name
+  const characterQuotes = quotes.filter(
+    (quote: Quote) => quote.character.name === character.name
+  );
+
+  res.json(characterQuotes);
+}) as express.Handler);
+
+app.get("/quotes/episode/:episodeId", ((req, res) => {
+  const episodeId = parseInt(req.params.episodeId);
+
+  // Find the episode to get its name
+  const episode = episodes.find((ep) => ep.id === episodeId);
+
+  if (!episode) {
+    return res.status(404).json({ error: "Episode not found" });
+  }
+
+  // Filter quotes by episode name
+  const episodeQuotes = quotes.filter(
+    (quote: Quote) => quote.episode.name === episode.name
+  );
+
+  res.json(episodeQuotes);
 }) as express.Handler);
 
 app.listen(PORT, () => {
