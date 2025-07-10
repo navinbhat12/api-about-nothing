@@ -46,7 +46,10 @@ const episodes: Episode[] = JSON.parse(fs.readFileSync(episodesPath, "utf-8"));
 const quotes: Quote[] = JSON.parse(fs.readFileSync(quotesPath, "utf-8"));
 
 app.get("/", (_req, res) => {
-  res.send("Welcome to the Seinfeld API!");
+  const mainCharacters = characters.filter((char: Character) =>
+    ["Jerry", "Elaine", "George", "Kramer"].includes(char.name)
+  );
+  res.json(mainCharacters);
 });
 
 app.get("/characters", (req, res) => {
