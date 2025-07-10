@@ -47,7 +47,9 @@ const quotes: Quote[] = JSON.parse(fs.readFileSync(quotesPath, "utf-8"));
 
 app.get("/", (_req, res) => {
   const mainCharacters = characters.filter((char: Character) =>
-    ["Jerry", "Elaine", "George", "Kramer"].includes(char.name)
+    ["jerry", "elaine", "george", "kramer"].some((name) =>
+      char.name.toLowerCase().includes(name.toLowerCase())
+    )
   );
   res.json(mainCharacters);
 });
