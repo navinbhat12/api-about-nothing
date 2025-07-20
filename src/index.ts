@@ -57,7 +57,7 @@ app.get("/", (_req, res) => {
 app.get("/characters", (req, res) => {
   const nameFilter = req.query.name as string | undefined;
   const page = parseInt(req.query.page as string) || 1;
-  const limit = Math.min(parseInt(req.query.limit as string) || 20, 20);
+  const limit = 20; // Hard page limit
 
   let filteredCharacters = characters;
 
@@ -72,16 +72,20 @@ app.get("/characters", (req, res) => {
   const start = (page - 1) * limit;
   const end = start + limit;
   const paginatedResults = filteredCharacters.slice(start, end);
-  const baseUrl = req.protocol + "://" + req.get("host") + req.path;
+  // Use x-forwarded-proto for protocol, default to https in production
+  let protocol = (req.headers["x-forwarded-proto"] as string) || req.protocol;
+  if (process.env.VERCEL || process.env.NODE_ENV === "production")
+    protocol = "https";
+  const baseUrl = protocol + "://" + req.get("host") + req.path;
   const nextPage =
     page < pages
-      ? `${baseUrl}?page=${page + 1}&limit=${limit}${
+      ? `${baseUrl}?page=${page + 1}${
           nameFilter ? `&name=${encodeURIComponent(nameFilter)}` : ""
         }`
       : null;
   const prevPage =
     page > 1
-      ? `${baseUrl}?page=${page - 1}&limit=${limit}${
+      ? `${baseUrl}?page=${page - 1}${
           nameFilter ? `&name=${encodeURIComponent(nameFilter)}` : ""
         }`
       : null;
@@ -107,7 +111,7 @@ app.get("/episodes", (req, res) => {
   const nameFilter = req.query.name as string | undefined;
   const seasonFilter = req.query.season as string | undefined;
   const page = parseInt(req.query.page as string) || 1;
-  const limit = Math.min(parseInt(req.query.limit as string) || 20, 20);
+  const limit = 20; // Hard page limit
 
   let filteredEpisodes = episodes;
 
@@ -128,16 +132,19 @@ app.get("/episodes", (req, res) => {
   const start = (page - 1) * limit;
   const end = start + limit;
   const paginatedResults = filteredEpisodes.slice(start, end);
-  const baseUrl = req.protocol + "://" + req.get("host") + req.path;
+  let protocol = (req.headers["x-forwarded-proto"] as string) || req.protocol;
+  if (process.env.VERCEL || process.env.NODE_ENV === "production")
+    protocol = "https";
+  const baseUrl = protocol + "://" + req.get("host") + req.path;
   const nextPage =
     page < pages
-      ? `${baseUrl}?page=${page + 1}&limit=${limit}${
+      ? `${baseUrl}?page=${page + 1}${
           nameFilter ? `&name=${encodeURIComponent(nameFilter)}` : ""
         }${seasonFilter ? `&season=${encodeURIComponent(seasonFilter)}` : ""}`
       : null;
   const prevPage =
     page > 1
-      ? `${baseUrl}?page=${page - 1}&limit=${limit}${
+      ? `${baseUrl}?page=${page - 1}${
           nameFilter ? `&name=${encodeURIComponent(nameFilter)}` : ""
         }${seasonFilter ? `&season=${encodeURIComponent(seasonFilter)}` : ""}`
       : null;
@@ -165,7 +172,7 @@ app.get("/quotes", (req, res) => {
   const episodeFilter = req.query.episode as string | undefined;
   const quoteFilter = req.query.quote as string | undefined;
   const page = parseInt(req.query.page as string) || 1;
-  const limit = Math.min(parseInt(req.query.limit as string) || 20, 20);
+  const limit = 20; // Hard page limit
 
   let filteredQuotes = quotes;
 
@@ -195,10 +202,13 @@ app.get("/quotes", (req, res) => {
   const start = (page - 1) * limit;
   const end = start + limit;
   const paginatedResults = filteredQuotes.slice(start, end);
-  const baseUrl = req.protocol + "://" + req.get("host") + req.path;
+  let protocol = (req.headers["x-forwarded-proto"] as string) || req.protocol;
+  if (process.env.VERCEL || process.env.NODE_ENV === "production")
+    protocol = "https";
+  const baseUrl = protocol + "://" + req.get("host") + req.path;
   const nextPage =
     page < pages
-      ? `${baseUrl}?page=${page + 1}&limit=${limit}${
+      ? `${baseUrl}?page=${page + 1}${
           authorFilter ? `&author=${encodeURIComponent(authorFilter)}` : ""
         }${
           episodeFilter ? `&episode=${encodeURIComponent(episodeFilter)}` : ""
@@ -206,7 +216,7 @@ app.get("/quotes", (req, res) => {
       : null;
   const prevPage =
     page > 1
-      ? `${baseUrl}?page=${page - 1}&limit=${limit}${
+      ? `${baseUrl}?page=${page - 1}${
           authorFilter ? `&author=${encodeURIComponent(authorFilter)}` : ""
         }${
           episodeFilter ? `&episode=${encodeURIComponent(episodeFilter)}` : ""
