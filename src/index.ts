@@ -56,6 +56,8 @@ app.get("/", (_req, res) => {
 
 app.get("/characters", (req, res) => {
   const nameFilter = req.query.name as string | undefined;
+  const page = parseInt(req.query.page as string) || 1;
+  const limit = Math.min(parseInt(req.query.limit as string) || 20, 20);
 
   let filteredCharacters = characters;
 
@@ -65,7 +67,29 @@ app.get("/characters", (req, res) => {
     );
   }
 
-  res.json(filteredCharacters);
+  const count = filteredCharacters.length;
+  const pages = Math.ceil(count / limit);
+  const start = (page - 1) * limit;
+  const end = start + limit;
+  const paginatedResults = filteredCharacters.slice(start, end);
+  const baseUrl = req.protocol + "://" + req.get("host") + req.path;
+  const nextPage =
+    page < pages
+      ? `${baseUrl}?page=${page + 1}&limit=${limit}${
+          nameFilter ? `&name=${encodeURIComponent(nameFilter)}` : ""
+        }`
+      : null;
+  const prevPage =
+    page > 1
+      ? `${baseUrl}?page=${page - 1}&limit=${limit}${
+          nameFilter ? `&name=${encodeURIComponent(nameFilter)}` : ""
+        }`
+      : null;
+
+  res.json({
+    info: { count, pages, next_page: nextPage, prev_page: prevPage },
+    results: paginatedResults,
+  });
 });
 
 app.get("/characters/:id", ((req, res) => {
@@ -82,22 +106,46 @@ app.get("/characters/:id", ((req, res) => {
 app.get("/episodes", (req, res) => {
   const nameFilter = req.query.name as string | undefined;
   const seasonFilter = req.query.season as string | undefined;
+  const page = parseInt(req.query.page as string) || 1;
+  const limit = Math.min(parseInt(req.query.limit as string) || 20, 20);
 
   let filteredEpisodes = episodes;
 
   if (nameFilter) {
-    filteredEpisodes = episodes.filter((ep: Episode) =>
+    filteredEpisodes = filteredEpisodes.filter((ep: Episode) =>
       ep.name.toLowerCase().includes(nameFilter.toLowerCase())
     );
   }
 
   if (seasonFilter) {
-    filteredEpisodes = episodes.filter((ep: Episode) =>
+    filteredEpisodes = filteredEpisodes.filter((ep: Episode) =>
       ep.episode.startsWith(`S${seasonFilter}`)
     );
   }
 
-  res.json(filteredEpisodes);
+  const count = filteredEpisodes.length;
+  const pages = Math.ceil(count / limit);
+  const start = (page - 1) * limit;
+  const end = start + limit;
+  const paginatedResults = filteredEpisodes.slice(start, end);
+  const baseUrl = req.protocol + "://" + req.get("host") + req.path;
+  const nextPage =
+    page < pages
+      ? `${baseUrl}?page=${page + 1}&limit=${limit}${
+          nameFilter ? `&name=${encodeURIComponent(nameFilter)}` : ""
+        }${seasonFilter ? `&season=${encodeURIComponent(seasonFilter)}` : ""}`
+      : null;
+  const prevPage =
+    page > 1
+      ? `${baseUrl}?page=${page - 1}&limit=${limit}${
+          nameFilter ? `&name=${encodeURIComponent(nameFilter)}` : ""
+        }${seasonFilter ? `&season=${encodeURIComponent(seasonFilter)}` : ""}`
+      : null;
+
+  res.json({
+    info: { count, pages, next_page: nextPage, prev_page: prevPage },
+    results: paginatedResults,
+  });
 });
 
 app.get("/episodes/:id", ((req, res) => {
@@ -116,6 +164,8 @@ app.get("/quotes", (req, res) => {
   const authorFilter = req.query.author as string | undefined;
   const episodeFilter = req.query.episode as string | undefined;
   const quoteFilter = req.query.quote as string | undefined;
+  const page = parseInt(req.query.page as string) || 1;
+  const limit = Math.min(parseInt(req.query.limit as string) || 20, 20);
 
   let filteredQuotes = quotes;
 
@@ -140,7 +190,33 @@ app.get("/quotes", (req, res) => {
     );
   }
 
-  res.json(filteredQuotes);
+  const count = filteredQuotes.length;
+  const pages = Math.ceil(count / limit);
+  const start = (page - 1) * limit;
+  const end = start + limit;
+  const paginatedResults = filteredQuotes.slice(start, end);
+  const baseUrl = req.protocol + "://" + req.get("host") + req.path;
+  const nextPage =
+    page < pages
+      ? `${baseUrl}?page=${page + 1}&limit=${limit}${
+          authorFilter ? `&author=${encodeURIComponent(authorFilter)}` : ""
+        }${
+          episodeFilter ? `&episode=${encodeURIComponent(episodeFilter)}` : ""
+        }${quoteFilter ? `&quote=${encodeURIComponent(quoteFilter)}` : ""}`
+      : null;
+  const prevPage =
+    page > 1
+      ? `${baseUrl}?page=${page - 1}&limit=${limit}${
+          authorFilter ? `&author=${encodeURIComponent(authorFilter)}` : ""
+        }${
+          episodeFilter ? `&episode=${encodeURIComponent(episodeFilter)}` : ""
+        }${quoteFilter ? `&quote=${encodeURIComponent(quoteFilter)}` : ""}`
+      : null;
+
+  res.json({
+    info: { count, pages, next_page: nextPage, prev_page: prevPage },
+    results: paginatedResults,
+  });
 });
 
 app.get("/quotes/character/:characterId", ((req, res) => {
