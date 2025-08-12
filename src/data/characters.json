@@ -192,5 +192,178 @@
         "url": "/episodes/the-busboy"
       }
     ]
+  },
+  {
+    "id": 19,
+    "name": "Frank Costanza",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Frank Costanza is George’s loud, eccentric, and hot-tempered father, known for his bizarre ideas, over-the-top outbursts, and unique inventions like Festivus. He’s a whirlwind of chaotic energy who somehow makes every situation more absurd",
+    "episodes": [{}]
+  },
+  {
+    "id": 20,
+    "name": "Estelle Costanza",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Estelle Costanza is George’s overbearing and sharp-tongued mother, who often matches her husband’s intensity with her own fiery personality and comedic nagging. She adds to the family chaos with her dramatic flair and quick wit.",
+    "episodes": [{}]
+  },
+  {
+    "id": 21,
+    "name": "Antonio",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Antonio is a busboy whom George accidentally gets fired in \"The Busboy\"—a twist of fate that ends up saving Antonio's life when an explosion kills five people at the restaurant shortly after. Grateful, Antonio thanks George, but a random fight with Elaine’s boyfriend leaves him injured, leaving George to care for his cat",
+    "episodes": [
+      {
+        "name": "The Busboy",
+        "url": "/episodes/the-busboy"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Susan Ross",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "George's fiancée. Daughter to wealthy parents and former NBC executive. Briefly experimented with Lesbianism. Died licking poisonous wedding invitation envelopes.",
+    "episodes": [{}]
+  },
+  {
+    "id": 23,
+    "name": "J. Peterman",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Elaine's boss. Eccentric owner of the fashion oriented J. Peterman catalog.",
+    "episodes": [{}]
+  },
+  {
+    "id": 24,
+    "name": "George Steinbrenner",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "George's boss. Depicted as a rambling, hard-nosed owner of the New York Yankees. His face is never shown. He seems to live in his own little world.",
+    "episodes": [{}]
+  },
+  {
+    "id": 25,
+    "name": "David Puddy",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Elaine's on again off again boyfriend. Phased and calm, yet can be a surprisingly passionate individual at times. Somewhat of an airhead. Used to be an auto mechanic but later became a car salesman.",
+    "episodes": [{}]
+  },
+  {
+    "id": 26,
+    "name": "Mr. Wilhelm",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "George's supervisor. Works hard to ensure the Yankees organization runs smoothly.",
+    "episodes": [{}]
+  },
+  {
+    "id": 27,
+    "name": "Mr. Lippman",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Elaine's boss. Owner of Pendant Publishing. Later gave up that position and opened up a bakery that sold only the tops of muffins.",
+    "episodes": [{}]
+  },
+  {
+    "id": 28,
+    "name": "Mr. Pitt",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Elaine's boss. Extremely wealthy business owner. He is a very picky individual and is nearly impossible to please.",
+    "episodes": [{}]
+  },
+  {
+    "id": 29,
+    "name": "Mickey Abbott",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Little actor. Close ties with his friend Kramer.",
+    "episodes": [{}]
+  },
+  {
+    "id": 30,
+    "name": "Jackie Chiles",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Kramer's eccentric lawyer. A very successful lawyer, but has had bad luck when representing Kramer.",
+    "episodes": [{}]
+  },
+  {
+    "id": 31,
+    "name": "Kenny Bania",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Stand-up comedian. Not particularly good at his job. Jerry especially dislikes him because he uses Jerry's act to warm up his audience.",
+    "episodes": [{}]
+  },
+  {
+    "id": 32,
+    "name": "Jack Klompus",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Short tempered resident of Phase Two of the Pines of Mar Gables who seems to consistently have a grudge against Morty Seinfeld. Has a cool astronaut pen that he gives to Jerry out of duress. Gets a \"sweetheart deal\" from Jerry for Morty's Cadillac, then subsequently drives it into a marsh.",
+    "episodes": [{}]
+  },
+  {
+    "id": 33,
+    "name": "Sue Ellen Mischke",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Sue Ellen is a bold and unpredictable character known for her quirky antics—like wearing a bra as a top—which lead to chaotic situations and legal troubles, yet she also has a sharp edge, shown by her competitive bidding and complicated personal relationships. Her storylines blend humor with moments of conflict, often intersecting with Elaine and the main cast in surprising ways.",
+    "episodes": [{}]
+  },
+  {
+    "id": 34,
+    "name": "Dr. Tim Whatley",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Tim Whatley is Elaine’s dentist and brief boyfriend, known for his sarcastic humor, questionable gift-giving (including regifting), and a knack for getting under Jerry’s skin—especially with his edgy jokes and odd behaviors. His storylines often mix awkward social moments with running gags, like his controversial conversion to Judaism and the invention of the term anti-dentite.",
+    "episodes": [{}]
+  },
+  {
+    "id": 35,
+    "name": "Ada",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Ada is George Costanza’s efficient and attractive secretary for the New York Yankees, whose brief romance with George leads to unexpected complications—especially when George impulsively promises her a raise that ends up exceeding his own salary. Her keen perception also inadvertently gets George into hot water when she mistakenly labels him a Communist, triggering a bizarre diplomatic assignment.",
+    "episodes": [{}]
+  },
+  {
+    "id": 36,
+    "name": "Babu Bhatt",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Babu is a Pakistani immigrant whose dream of running a successful restaurant ends in disappointment and debt after taking Jerry’s well-meaning but misguided advice. Later, his struggles with immigration and eventual deportation lead to a bitter grudge against Jerry and the gang, culminating in his testimony against them in the series finale",
+    "episodes": [{}]
+  },
+  {
+    "id": 37,
+    "name": "Cedric",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Cedric is one half of a tough duo with his partner Bob, known for repeatedly harassing and beating up Kramer throughout the series. They are revealed to be Puerto Rican in their final appearance, adding to their streetwise, intimidating presence.",
+    "episodes": [{}]
+  },
+  {
+    "id": 38,
+    "name": "Lloyd Braun",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Lloyd is a quirky and mentally fragile character who suffered a nervous breakdown after an unsuccessful political campaign and unsuccessfully tried self-help methods like the “serenity now” tapes. Despite his struggles, he briefly dated Elaine and later helped Kramer and Jerry with odd jobs, but his eccentric behavior and low confidence often leave him on the fringes of the main cast’s world.",
+    "episodes": [{}]
+  },
+  {
+    "id": 39,
+    "name": "Russel Dalrymple",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Russell Dalrymple is the eccentric NBC president who initially champions Jerry and George’s sitcom but repeatedly complicates their lives with his awkward personal behavior—like his fixation on Elaine and surprising tolerance for inappropriate moments. His sudden disappearance to join Greenpeace and eventual offscreen death add a bizarre twist to the show’s behind-the-scenes drama",
+    "episodes": [{}]
+  },
+  {
+    "id": 40,
+    "name": "Deena Lazzari",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Deena Lazzari is George Costanza’s childhood friend who becomes convinced he is mentally unstable after repeatedly witnessing his odd and erratic behavior, from dressing in costume to talking to a doll. Her growing concerns lead her to dismiss George’s desperate pleas when he’s mistakenly committed to a mental asylum, believing he finally needs help. ",
+    "episodes": [{}]
+  },
+  {
+    "id": 41,
+    "name": "The Drake",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Scott Drake, better known as The Drake, was a mutual friend of Jerry, George, Elaine and Kramer, who often referred to him with phrases like \"Love the Drake\" or \"Hate the Drake\", depending on their mood. He has had a very rocky relationship with his fiancée, Allison, who also caused him quite a bit of personal grief",
+    "episodes": [{}]
+  },
+  {
+    "id": 42,
+    "name": "Sidney Fields",
+    "img": "https://i.imgur.com/CV7OLfy.png",
+    "blurb": "Sidney Fields is a cantankerous elderly man whom Jerry reluctantly cares for, known for his sharp insults and paranoia that Jerry will harm him. Despite his grumpiness and chaotic antics—like losing his teeth in a garbage disposal—Sid maintains a stubborn independence, culminating in a memorable cameo at Monk’s Cafe with other seniors.",
+    "episodes": [{}]
   }
 ]

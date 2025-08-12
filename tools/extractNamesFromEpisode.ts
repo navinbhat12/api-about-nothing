@@ -1,7 +1,6 @@
 import axios from "axios";
 import * as cheerio from "cheerio";
-
-const EPISODE_URL = "https://seinfeldscripts.com/TheBusboy.htm";
+const EPISODE_URL = "https://seinfeldscripts.com/TheParkingGarage.htm";
 
 async function extractCharacterNames() {
   try {
@@ -18,8 +17,19 @@ async function extractCharacterNames() {
 
     const uniqueNames = Array.from(new Set(speakerMatches)).sort();
 
-    console.log(`📝 Found ${uniqueNames.length} character name(s):`);
-    uniqueNames.forEach((name) => console.log(`- ${name}`));
+    // Filter out main characters
+    const mainCharacters = ["Jerry", "Elaine", "George", "Kramer"];
+    const filteredNames = uniqueNames.filter(
+      (name) =>
+        !mainCharacters.some((mainChar) =>
+          name.toLowerCase().includes(mainChar.toLowerCase())
+        )
+    );
+
+    console.log(
+      `📝 Found ${uniqueNames.length} total character name(s), ${filteredNames.length} excluding main characters:`
+    );
+    filteredNames.forEach((name) => console.log(`- ${name}`));
   } catch (err) {
     console.error("❌ Error scraping script:", err);
   }
